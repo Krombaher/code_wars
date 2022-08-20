@@ -55,3 +55,12 @@ function digitize(n) {
 
     return n.toString().split('').reverse().map(Number)
 }
+
+// Sum Numbers
+function sum (numbers) {
+    "use strict";
+    return numbers.reduce(function(t, n){
+    return t + n;
+  }, 0);
+    
+};
