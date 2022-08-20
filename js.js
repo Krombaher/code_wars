@@ -57,10 +57,30 @@ function digitize(n) {
 }
 
 // Sum Numbers
-function sum (numbers) {
+function sum(numbers) {
     "use strict";
-    return numbers.reduce(function(t, n){
-    return t + n;
-  }, 0);
-    
+    return numbers.reduce(function (t, n) {
+        return t + n;
+    }, 0);
+
 };
+
+function sum(numbers) {
+    return numbers.reduce((a, b) => a + b, 0);
+}
+
+// Build a pile of Cubes
+
+
+function findNb(m) {
+    var n = 0
+    while (m > 0) m -= ++n ** 3
+    return m ? -1 : n
+}
+
+//Get the Middle Character
+
+function getMiddle(s)
+{
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
